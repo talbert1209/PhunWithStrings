@@ -17,7 +17,7 @@
             Name:
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
-            <asp:Button ID="challenge1Button" runat="server" Text="Check Challenge 1" />
+            <asp:Button ID="challenge1Button" runat="server" OnClick="challenge1Button_Click" Text="Check Challenge 1" />
             <br />
             <asp:Label ID="challenge1ResultLabel" runat="server"></asp:Label>
             <br />
