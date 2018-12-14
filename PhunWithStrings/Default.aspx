@@ -17,15 +17,29 @@
             Name:
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Button ID="challenge1Button" runat="server" Text="Check Challenge 1" />
+            <br />
+            <asp:Label ID="challenge1ResultLabel" runat="server"></asp:Label>
             <br />
             <br />
-            Challegne #2 - Reverse this sequence &quot;Luke,Leia,Han,Chewbacca&quot;<br />
+            Challegne #2 - Reverse this sequence &quot;<asp:Label ID="sequenceLabel" runat="server" Text="Luke,Leia,Han,Chewbacca"></asp:Label>
+            &quot;<br />
+            <asp:Button ID="challenge2Button" runat="server" Text="Check Challenge 2" />
+            <br />
+            <asp:Label ID="challenge2ResultLabel" runat="server"></asp:Label>
+            <br />
             <br />
             Challenge #3 - Use the sequence to create ascii art:<br />
+            <asp:Button ID="challenge3Button" runat="server" Text="Check Challenge 3" />
             <br />
-            Challenge #4 string puzzle = &quot;NOW IS ZHEremove-me ZIME FOR ALL GOOD MEN ZO COME ZO ZHE AID OF ZHEIR COUNZRY.&quot;
+            <asp:Label ID="challenge3ResultLabel" runat="server"></asp:Label>
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Should read &quot;Now is the time for all good men to come to the aid of their country.&quot;</form>
+            <br />
+            Challenge #4 string puzzle = &quot;NOW IS ZHEremove-me ZIME FOR ALL GOOD MEN ZO COME ZO ZHE AID OF ZHEIR COUNZRY.&quot; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Should read &quot;Now is the time for all good men to come to the aid of their country.&quot;<br />
+            <asp:Button ID="challenge4Button" runat="server" Text="Check Challenge 4" />
+            <br />
+            <asp:Label ID="challenge4ResultLabel" runat="server"></asp:Label>
+    </form>
     </body>
 </html>
