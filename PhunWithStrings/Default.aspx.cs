@@ -48,5 +48,20 @@ namespace PhunWithStrings
         {
             return sequence.Split(',');
         }
+
+        protected void challenge3Button_Click(object sender, EventArgs e)
+        {
+            var splitSequence = GetSequenceArray("Luke,Leia,Han,Chewbacca");
+            StringBuilder stringBuilder = new StringBuilder();
+            string newString = "";
+
+            for (int i = splitSequence.Length - 1; i >= 0; i--)
+            {
+                var padding = (14 - splitSequence[i].Length) / 2;
+                stringBuilder.Append($"{splitSequence[i].PadLeft(splitSequence[i].Length + padding, '*').PadRight(14,'*')}<br/>");
+            }
+
+            challenge3ResultLabel.Text = stringBuilder.ToString();
+        }
     }
 }

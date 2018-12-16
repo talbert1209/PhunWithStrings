@@ -30,7 +30,7 @@
             <br />
             <br />
             Challenge #3 - Use the sequence to create ascii art:<br />
-            <asp:Button ID="challenge3Button" runat="server" Text="Check Challenge 3" />
+            <asp:Button ID="challenge3Button" runat="server" Text="Check Challenge 3" OnClick="challenge3Button_Click" />
             <br />
             <asp:Label ID="challenge3ResultLabel" runat="server"></asp:Label>
             <br />
