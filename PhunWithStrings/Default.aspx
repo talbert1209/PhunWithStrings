@@ -37,7 +37,7 @@
             <br />
             Challenge #4 string puzzle = &quot;NOW IS ZHEremove-me ZIME FOR ALL GOOD MEN ZO COME ZO ZHE AID OF ZHEIR COUNZRY.&quot; <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Should read &quot;Now is the time for all good men to come to the aid of their country.&quot;<br />
-            <asp:Button ID="challenge4Button" runat="server" Text="Check Challenge 4" />
+            <asp:Button ID="challenge4Button" runat="server" Text="Check Challenge 4" OnClick="challenge4Button_Click" />
             <br />
             <asp:Label ID="challenge4ResultLabel" runat="server"></asp:Label>
     </form>

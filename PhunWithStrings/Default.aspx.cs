@@ -53,15 +53,33 @@ namespace PhunWithStrings
         {
             var splitSequence = GetSequenceArray("Luke,Leia,Han,Chewbacca");
             StringBuilder stringBuilder = new StringBuilder();
-            string newString = "";
 
-            for (int i = splitSequence.Length - 1; i >= 0; i--)
+            for (int i = 0; i < splitSequence.Length; i++)
             {
                 var padding = (14 - splitSequence[i].Length) / 2;
                 stringBuilder.Append($"{splitSequence[i].PadLeft(splitSequence[i].Length + padding, '*').PadRight(14,'*')}<br/>");
             }
 
             challenge3ResultLabel.Text = stringBuilder.ToString();
+        }
+
+        protected void challenge4Button_Click(object sender, EventArgs e)
+        {
+            string puzzle = "NOW IS ZHEremove-me ZIME FOR ALL GOOD MEN ZO COME ZO ZHE AID OF ZHEIR COUNZRY.";
+
+            var newString = puzzle.Remove(9, 9).Replace('Z', 'T').ToLower();
+            var finalString = "";
+            for (int i = 0; i < newString.Length; i++)
+            {
+                if (i == 0)
+                {
+                    finalString += newString[i].ToString().ToUpper();
+                }
+                else
+                    finalString += newString[i];
+            }
+
+            challenge4ResultLabel.Text = finalString;
         }
     }
 }
