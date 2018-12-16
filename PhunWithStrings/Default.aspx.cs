@@ -27,5 +27,26 @@ namespace PhunWithStrings
 
             challenge1ResultLabel.Text = stringBuilder.ToString();
         }
+
+        protected void challenge2Button_Click(object sender, EventArgs e)
+        {
+            var splitSequence = GetSequenceArray("Luke,Leia,Han,Chewbacca");
+            StringBuilder stringBuilder = new StringBuilder();
+
+            for (int i = splitSequence.Length - 1; i >= 0; i--)
+            {
+                if (i == 0)
+                    stringBuilder.Append(splitSequence[i]);
+                else
+                    stringBuilder.Append($"{splitSequence[i]}, ");
+            }
+
+            challenge2ResultLabel.Text = stringBuilder.ToString();
+        }
+
+        private string[] GetSequenceArray(string sequence)
+        {
+            return sequence.Split(',');
+        }
     }
 }

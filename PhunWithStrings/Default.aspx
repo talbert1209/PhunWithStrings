@@ -24,7 +24,7 @@
             <br />
             Challegne #2 - Reverse this sequence &quot;<asp:Label ID="sequenceLabel" runat="server" Text="Luke,Leia,Han,Chewbacca"></asp:Label>
             &quot;<br />
-            <asp:Button ID="challenge2Button" runat="server" Text="Check Challenge 2" />
+            <asp:Button ID="challenge2Button" runat="server" Text="Check Challenge 2" OnClick="challenge2Button_Click" />
             <br />
             <asp:Label ID="challenge2ResultLabel" runat="server"></asp:Label>
             <br />
